@@ -30,6 +30,8 @@ class ImageActivity : AppCompatActivity(), OnClickListener {
             else -> R.drawable.ic_launcher_foreground
         }
         main.imgA.setImageResource(res)
+        main.btnLike.setOnClickListener(this)
+        main.btnDislike.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
